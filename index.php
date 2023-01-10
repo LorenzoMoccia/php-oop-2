@@ -6,9 +6,10 @@
 
     $primoProdotto = new Product("Crocchette per Gatti", "Crocchette salutari per il tuo gattino", 39);
     $secondoProdotto = new Product("Topolino", "Topolino, con questo il tuo felino impazzira'", 11);
+    $terzoProdotto = new Product("Cuccia per Cani", "Una splendida cuccia per il tuo amico a 4 zampe", 72);
 
 
-    $products = [$primoProdotto, $secondoProdotto];
+    $products = [$primoProdotto, $secondoProdotto, $terzoProdotto];
     
     /*
     echo '<pre>';
