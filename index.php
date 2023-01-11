@@ -45,13 +45,15 @@
 
              '<div class="product-price">',
                 $product->price,
-             '</div></div>';
+             '</div>';
 
              try{
                 echo $product->setSconto("Ciao");
              }catch(Exception $e){
                 echo "Non è un numero intero";
              }
+
+             echo '</div>';
 
             }
 
