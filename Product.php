@@ -5,12 +5,13 @@ trait Sconto{
 
 class Product{
     use Sconto;
-    
+
     //Proprieta'
     public $title;
     public $description;
     public $price;
     public $type;
+    public $image;
 
 
     //Applica uno sconto al prezzo del Product

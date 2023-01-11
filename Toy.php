@@ -8,12 +8,14 @@ class Toy extends Product{
     public $color;
 
     
-    function __construct(string $title, string $description, $price, Category $_type)
+    function __construct(string $title, string $description, $price, $image, Category $_type)
     {
         $this->title = $title;
         $this->description = $description;
         $this->price = $price;
+        $this->image = $image;
         $this->type = $_type;
+        
     }
 }
 
