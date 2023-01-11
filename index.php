@@ -45,8 +45,14 @@
 
              '<div class="product-price">',
                 $product->price,
+             '</div>',
+
+             '<div class="product-category">',
+                $product->type->type,
              '</div>';
 
+
+             //Provo a impostare uno sconto con una stringa, dato che accetta solo
              try{
                 echo $product->setSconto("Ciao");
              }catch(Exception $e){
