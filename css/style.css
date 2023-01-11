@@ -9,9 +9,10 @@ body{
 }
 
 .product-container{
-    border: 1px dashed red;
-    width: 300px;
+    width: 400px;
     text-align: center;
+    background-color: lightblue;
+    margin-right: 10px;
 }
 
 .product-title{
@@ -23,7 +24,8 @@ body{
 }
 
 img{
-    width: 280px;
-    height: 280px;
+    width: 350px;
+    height: 350px;
+    margin-top: 10px;
 }
 
