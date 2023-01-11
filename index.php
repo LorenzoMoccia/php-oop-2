@@ -48,7 +48,7 @@
              '</div>',
 
              '<div class="product-price">',
-                $product->price,
+                $product->price, "€",
              '</div>',
 
              '<div class="product-category">',
