@@ -45,14 +45,13 @@
 
              '<div class="product-price">',
                 $product->price,
-             '</div>';
+             '</div></div>';
 
-             if($categoryCane == "Cane"){
-                echo '<div class="product-category">Categoria: Cane</div></div>';
-             }else{
-                echo '<div class="product-category">Categoria: Gatto</div></div>';
-             }
-        }
+            }
+
+            
+
+        
         ?>
 </body>
 </html>
