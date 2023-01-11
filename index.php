@@ -52,9 +52,9 @@
              '</div>';
 
 
-             //Provo a impostare uno sconto con una stringa, dato che accetta solo
+             //Provo a impostare uno sconto, se il paramentro di setSconto non e' un numero intero genera l'Exception
              try{
-                echo $product->setSconto("Ciao");
+                echo $product->setSconto(2);
              }catch(Exception $e){
                 echo "Non è un numero intero";
              }

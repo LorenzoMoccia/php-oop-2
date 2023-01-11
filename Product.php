@@ -5,15 +5,21 @@ trait Sconto{
 
 class Product{
     use Sconto;
+    
     //Proprieta'
     public $title;
     public $description;
     public $price;
     public $type;
 
-    public function setSconto($percentualeSconto){
-        if(!is_int(($percentualeSconto))){
+
+    //Applica uno sconto al prezzo del Product
+    public function setSconto($sconto){
+        if(!is_int(($sconto))){
             throw new Exception("Lo sconto non è un numero intero");
+        }else{
+            $this->price = $this->price - $sconto;
+            return $this->price;
         }
     }
 
