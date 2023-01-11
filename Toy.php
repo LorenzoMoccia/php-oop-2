@@ -7,10 +7,12 @@ class Toy extends Product{
     public $color;
 
     
-    function __construct(string $dimension, string $color)
+    function __construct(string $title, string $description, $price, Category $_type)
     {
-        $this->dimension = $dimension;
-        $this->color = $color;
+        $this->title = $title;
+        $this->description = $description;
+        $this->price = $price;
+        $this->type = $_type;
     }
 }
 

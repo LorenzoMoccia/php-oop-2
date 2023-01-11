@@ -1,13 +1,15 @@
 <?php
 
 
-    require_once __DIR__ . "/Product.php";
-    require_once __DIR__ . "/Category.php";
+    require_once __DIR__ . "/Food.php";
+    require_once __DIR__ . "/Toy.php";
 
-    $primoProdotto = new Product("Crocchette per Gatti", "Crocchette salutari per il tuo gattino", 39);
-    $secondoProdotto = new Product("Topolino", "Topolino, con questo il tuo felino impazzira'", 11);
-    $terzoProdotto = new Product("Cuccia per Cani", "Una splendida cuccia per il tuo amico a 4 zampe", 72);
+    $categoryGatto = new Category("Gatto");
+    $categoryCane = new Category("Cane");
 
+    $primoProdotto = new Food("Crocchette per Gatti", "Crocchette salutari per il tuo gattino", 39, $categoryGatto);
+    $secondoProdotto = new Toy("Topolino", "Topolino, con questo il tuo felino impazzira'", 11, $categoryGatto);
+    $terzoProdotto = new Toy("Cuccia per Cani", "Una splendida cuccia per il tuo amico a 4 zampe", 72, $categoryCane);
 
     $products = [$primoProdotto, $secondoProdotto, $terzoProdotto];
     
@@ -43,8 +45,13 @@
 
              '<div class="product-price">',
                 $product->price,
-             '</div>',
-            '</div>';
+             '</div>';
+
+             if($categoryCane == "Cane"){
+                echo '<div class="product-category">Categoria: Cane</div></div>';
+             }else{
+                echo '<div class="product-category">Categoria: Gatto</div></div>';
+             }
         }
         ?>
 </body>

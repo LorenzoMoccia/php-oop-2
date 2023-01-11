@@ -6,12 +6,13 @@ require_once __DIR__ . "/Category.php";
 class Food extends Product{
     public $ingredients;
     public $quantity;
-    public Category $type;
 
-    public function __construct(string $ingredients, string $quantity)
+    public function __construct(string $title, string $description, $price, Category $_type)
     {
-        $this->ingredients = $ingredients;
-        $this->quantity = $quantity;
+        $this->title = $title;
+        $this->description = $description;
+        $this->price = $price;
+        $this->type = $_type;
     }
 }
 
