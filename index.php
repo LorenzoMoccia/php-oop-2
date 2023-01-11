@@ -47,10 +47,16 @@
                 $product->price,
              '</div></div>';
 
+             try{
+                echo $product->setSconto("Ciao");
+             }catch(Exception $e){
+                echo "Non è un numero intero";
+             }
+
             }
 
             
-            
+
         
         ?>
 </body>

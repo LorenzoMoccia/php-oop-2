@@ -15,11 +15,7 @@ class Food extends Product{
         $this->type = $_type;
     }
 
-    public function setSconto(int $percentualeSconto){
-        if(!is_int(($percentualeSconto))){
-            throw new Exception("Non è un numero intero");
-        }
-    }
+    
 }
 
 ?>

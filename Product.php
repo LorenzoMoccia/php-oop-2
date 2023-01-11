@@ -11,6 +11,12 @@ class Product{
     public $price;
     public $type;
 
+    public function setSconto($percentualeSconto){
+        if(!is_int(($percentualeSconto))){
+            throw new Exception("Lo sconto non è un numero intero");
+        }
+    }
+
 }
 
 ?>
