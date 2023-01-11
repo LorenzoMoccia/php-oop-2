@@ -58,9 +58,9 @@
 
              //Provo a impostare uno sconto, se il paramentro di setSconto non e' un numero intero genera l'Exception
              try{
-                echo "Prezzo scontato: ", $product->setSconto(2), "€";
+                echo "Prezzo scontato: ", $product->setSconto("ciao"), "€";
              }catch(Exception $e){
-                echo "Non è un numero intero";
+                echo $e;
              }
 
              echo '</div>';
